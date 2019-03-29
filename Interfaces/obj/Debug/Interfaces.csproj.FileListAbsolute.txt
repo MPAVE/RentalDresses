@@ -1,0 +1,17 @@
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\Interfaces.dll.config
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\App.Models.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\PagedList.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\PagedList.Mvc.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\App.Models.pdb
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\App.Models.dll.config
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\PagedList.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\PagedList.Mvc.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\Interfaces\obj\Debug\Interfaces.pdb

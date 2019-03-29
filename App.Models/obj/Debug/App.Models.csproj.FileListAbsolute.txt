@@ -1,0 +1,16 @@
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\App.Models.dll.config
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\App.Models.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\App.Models.pdb
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\EntityFramework.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\PagedList.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\PagedList.Mvc.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\EntityFramework.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\PagedList.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\bin\Debug\PagedList.Mvc.xml
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\obj\Debug\App.Models.csproj.CoreCompileInputs.cache
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\obj\Debug\App.Models.csproj.CopyComplete
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\obj\Debug\App.Models.dll
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\obj\Debug\App.Models.pdb
+C:\Users\Mirela\Desktop\mirela acasa\Aplicatie\DressApp\App.Models\obj\Debug\App.Models.csprojAssemblyReference.cache

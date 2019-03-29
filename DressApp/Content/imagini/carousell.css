@@ -1,0 +1,96 @@
+﻿
+.carousel .background {
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+@media (max-width:991px) {
+    .carousel .background {
+        background-size: cover; 
+    }
+}
+
+.carousel .background.a {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('45666414284-372x558-lo.jpg');
+}
+
+.carousel .background.b {
+    
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('2015-New-Sexy-Pink-Tulle-Short-Homecoming-Dresses-Lace-Beaded-Rhinestones-Mini-Backless-Party-Cocktail-Gowns.jpg_640x640.jpg');
+}
+
+.carousel .background.c {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('rBVaSVpoJq6AGJj4AAIIBFdf_8A223.jpg');
+}
+.carousel .background.d {
+ 
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('e2803bd7d0a5a7e1b7ba7826c7baf4ad.jpg');
+}
+
+.carousel .background.e {
+    
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('17107-3_enl1800x1800w.jpg');
+}
+.carousel .background.f {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('janevini-sheer.jpg');
+}
+
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+        .carousel-fade .carousel-inner > .item.next.left,
+        .carousel-fade .carousel-inner > .item.prev.right,
+        .carousel-fade .carousel-inner > .item.active {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+}
+
+
+.covertext {
+    position: absolute;
+    top: 200px;
+    left: 0px; /* Make the div full width */
+    right: 0px;
+}
+
+.title {
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: Verdana;
+    font-size: 23px;
+    color: #ffffff;
+    text-align: center;
+}

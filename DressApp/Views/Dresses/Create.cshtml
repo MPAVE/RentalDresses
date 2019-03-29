@@ -1,0 +1,82 @@
+﻿@model App.Models.Dresses
+
+@{
+    ViewBag.Title = "Create";
+}
+<link href="~/Content/table.css" rel="stylesheet" />
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<form action="#" autocomplete="off">
+    <h4>Dresses</h4>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Title)
+        <div>
+            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Style)
+            <div>
+                @Html.EditorFor(model => model.Style, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Style)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Size)
+            <div>
+                @Html.EditorFor(model => model.Size, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Size)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Brand)
+            <div>
+                @Html.EditorFor(model => model.Brand, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Brand)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Length)
+            <div>
+                @Html.EditorFor(model => model.Length, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Length)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Price)
+            <div>
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price)
+            </div>
+        </div>
+
+        <div>
+            @Html.LabelFor(model => model.Colour)
+            <div>
+                @Html.EditorFor(model => model.Colour, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Colour)
+            </div>
+        </div>
+        <br />
+        <div>
+            <fieldset>
+                <input type="submit" value="Create" class="btn btn-default" />
+            </fieldset>
+        </div>
+</form>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -1,0 +1,50 @@
+﻿@model App.Models.Rentals
+
+@{
+    ViewBag.Title = "Create";
+}
+<link href="~/Content/table.css" rel="stylesheet" />
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Rentals</h4>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CustomerId)
+            <div>
+                @Html.DropDownList("CustomerId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CustomerId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DressId)
+            <div>
+                @Html.DropDownList("DressId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DressId)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateRented)
+            <div >
+                @Html.EditorFor(model => model.DateRented, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DateRented)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

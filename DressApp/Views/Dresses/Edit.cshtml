@@ -1,0 +1,84 @@
+﻿@model App.Models.Dresses
+
+@{
+    ViewBag.Title = "Edit";
+}
+<link href="~/Content/table.css" rel="stylesheet" />
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<fieldset>
+    <h4>Dresses</h4>
+
+
+    @Html.HiddenFor(model => model.DressId)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Title)
+        <div>
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Style)
+        <div>
+            @Html.EditorFor(model => model.Style)
+            @Html.ValidationMessageFor(model => model.Style)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Size)
+        <div>
+            @Html.EditorFor(model => model.Size)
+            @Html.ValidationMessageFor(model => model.Size)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Brand)
+        <div>
+            @Html.EditorFor(model => model.Brand)
+            @Html.ValidationMessageFor(model => model.Brand)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Length)
+        <div>
+            @Html.EditorFor(model => model.Length)
+            @Html.ValidationMessageFor(model => model.Length)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Price)
+        <div>
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Colour)
+        <div>
+            @Html.EditorFor(model => model.Colour)
+            @Html.ValidationMessageFor(model => model.Colour)
+        </div>
+    </div>
+
+    <br />
+    <fieldset>
+        <fieldset>
+
+            <input type="submit" value="Save" class="btn btn-default" />
+        </fieldset>
+    </fieldset>
+</fieldset>
+}
+<br />
+    <div>
+        @Html.ActionLink("Back to List", "Index" )
+    </div>

@@ -1,0 +1,49 @@
+﻿@model App.Models.Rentals
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Rentals</h4>
+    <hr />
+    <dl class="media-middle">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customers.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customers.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dresses.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dresses.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateRented)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateRented)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

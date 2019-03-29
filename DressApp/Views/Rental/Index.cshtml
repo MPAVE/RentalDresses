@@ -1,0 +1,76 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@model IPagedList<App.Models.Rentals>
+
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/table.css" rel="stylesheet" />
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<p>
+    @using (Html.BeginForm("Index", "Rental", FormMethod.Get))
+    {
+        @Html.TextBox("search") <input type="submit" value=" Search" />
+    }
+</p>
+<table style="width:100%">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Customers.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().Dresses.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().DateRented)
+        </th>
+        <th>Actions</th>
+    </tr>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3">
+                    No Match Any Document
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Customers.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Dresses.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateRented)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.RentalId }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.RentalId }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.RentalId })
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+<br />
+<div id='Paging'>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page, search = Request.QueryString["search"] }), new PagedListRenderOptions() { Display = PagedListDisplayMode.IfNeeded, DisplayPageCountAndCurrentLocation = true, DisplayItemSliceAndTotal = true })
+</div>
+<div class="panel-footer">
+    <p class="box-title"><b>Total Users till @String.Format("{0 : dddd, MMMM d, yyyy}", DateTime.Now)  : </b><span class="label label-primary">@Model.Count()</span></p>
+</div>

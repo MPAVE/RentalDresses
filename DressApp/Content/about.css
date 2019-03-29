@@ -1,0 +1,30 @@
+h1, h2 {
+            font-family: 'Dancing Script', cursive;
+            font-style: italic;
+            font-size: x-large;
+        }
+        .pic {
+            box-shadow: 6px 6px 7px #888888;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 100px;
+            margin-left: 135px;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+            .pic:before {
+                content: '';
+                margin-top: -63px;
+                margin-left: -80px;
+                position: absolute;
+                width: 450px;
+                height: 450px;
+                background-image: url('../../Content/imagini/98414279-dressing-well-is-a-form-of-good-manners-fashion-quote-hand-lettering-for-your-design-t-shirt-bags-po.jpg');
+             
+                -ms-transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
